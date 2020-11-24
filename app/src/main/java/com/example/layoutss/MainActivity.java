@@ -12,11 +12,17 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView zim = findViewById(R.id.imageView_zim);
 
+        zim.animate().alpha(0).setDuration(2000);
+        zim.animate().rotation(1800).setDuration(2000);
+        zim.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
+
+
+
         ImageView smooth = findViewById(R.id.imageView_smooth);
 
-        zim.animate().alpha(0f).setDuration(2000);
-
         smooth.animate().alpha(1).setDuration(2000);
+        smooth.animate().rotation(-1800).setDuration(2000);
+        smooth.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
 
     }
 
@@ -26,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        ImageView zim = findViewById(R.id.imageView_zim);
+//
+//        zim.setTranslationX(-1000);
+
     }
 }

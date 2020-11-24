@@ -19,11 +19,13 @@
 
     <ImageView
         android:id="@+id/imageView_smooth"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:alpha="0"
         android:onClick="fade"
-        app:srcCompat="@drawable/smooth_gentelman"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smooth_gentelman" />
 </androidx.constraintlayout.widget.ConstraintLayout>
